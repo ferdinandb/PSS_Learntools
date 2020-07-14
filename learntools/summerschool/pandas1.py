@@ -13,7 +13,7 @@ investments4['AAPL'].loc['Tim'] = 10
 investments5 = investments4.copy()
 investments5['MSFT'].loc[['Anna', 'Jordan']] = 3
 
-price_data1 = pd.read_csv('./data/company-prices-clean.csv')
+price_data1 = pd.read_csv('./data/company-prices.csv')
 price_data2 = price_data1.copy()
 price_data2['Date'] = pd.to_datetime(price_data2['Date'])
 price_data3 = price_data2.copy()
@@ -80,7 +80,7 @@ class Q6(EqualityCheckProblem):
     _var = 'price_data'
     _expected = price_data1
     _hint = "This is a very simple CSV file. You won't have to consider anything when reading it."
-    _solution = CS("price_data = pd.read_csv('./data/company-prices-clean.csv')")
+    _solution = CS("price_data = pd.read_csv('./data/company-prices.csv')")
 
 
 class Q7(EqualityCheckProblem):
@@ -130,7 +130,7 @@ class Q12(EqualityCheckProblem):
     _hint = "The ModuleNotFoundError indicates that a required module/package/library is not installed (the " \
             "three words can be used interchangeably). If you find the documentation of the missing package, you " \
             "should also find the installation instructions."
-    _solution = CS("""price_data.to_excel('./data/company-prices-clean.xlsx', sheet_name='PriceData')
+    _solution = CS("""price_data.to_excel('./data/company-prices.xlsx', sheet_name='PriceData')
 
 '''
 The ModuleNotFoundError indicates that a required module/package/library is not installed (the 
