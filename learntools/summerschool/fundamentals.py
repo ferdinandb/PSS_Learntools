@@ -12,8 +12,9 @@ class Q1(EqualityCheckProblem):
 ftse100 = ['Burberry', 'Unilever']
 
 '''
-Our list of constituents is likely to change over time. Tuples are immutable and would not allow
-us add/remove constituents. Lists, however, are mutable and allow us to reflect the changes.
+Our list of constituents is likely to change over time. Tuples are immutable 
+and would not allow us to add/remove constituents. Lists, however, are mutable 
+and allow us to reflect the changes.
 '''
 """)
 
