@@ -104,7 +104,7 @@ class Q9(EqualityCheckProblem):
     _hint = "Read the documentation carefully. The method `.astype()` is chained after the DataFrame (in our case" \
             "`price_data`). The first and only argument has to be a dictionary with the column name and the desired " \
             "dtype `datetime64[ns]`."
-    _solution = CS("price_data = price_data.astype({'Date': 'datetime64[ns]'})")
+    _solution = CS("price_data_alt = price_data.astype({'Date': 'datetime64[ns]'})")
 
 
 class Q10(EqualityCheckProblem):
