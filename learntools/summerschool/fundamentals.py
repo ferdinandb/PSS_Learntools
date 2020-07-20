@@ -150,7 +150,6 @@ class Q12(EqualityCheckProblem):
 Amazon
 Alphabet
 Johnson & Johnson
-Intel
 """
     _hint = "First, open the file and append the new line. Second, read the same file and print the lines."
     _solution = CS("""def add_company(file, new_entry):
